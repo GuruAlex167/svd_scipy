@@ -47,9 +47,9 @@ if uploaded_file:
     st.subheader("Original vs Compressed Image")
     col1, col2 = st.columns(2)
     with col1:
-        st.image(original_image, caption="Original (Grayscale)", use_column_width=True)
+        st.image(original_image, caption="Original (Grayscale)", use_container_width=True)
     with col2:
-        st.image(compressed_image, caption=f"Compressed (k={k})", use_column_width=True)
+        st.image(compressed_image, caption=f"Compressed (k={k})", use_container_width=True)
 
     # Metrics
     st.subheader("📊 Compression Metrics")
